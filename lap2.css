@@ -1,0 +1,116 @@
+.toan{
+  width:100% ;
+  height: auto;
+}
+.menu{
+  width: 100%;
+  height: 120px;
+  background-color: rgb(250, 180, 0);
+}
+
+.up{
+  width: 80%;
+  height: 70px;
+  margin: 0 auto;
+}
+.up ul{
+  list-style: none;
+  margin-top:  0px;
+  margin-left:0px;
+}
+.up ul li{
+  display: inline-block;
+  padding:10px;
+}
+.up ul li a{
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+.up ul li a img{
+  vertical-align: middle;
+  
+}
+.logo a img{
+  padding-right: 40px;
+}
+.dow{
+  height: 50px;
+  width: 80px;
+  margin: 0 auto;
+}
+.search{
+  height: 40px;
+  width: 550px;
+  background-color: white;
+  margin: auto;
+  border-radius: 10px;
+}
+.search input{
+  width: 480px;
+  height:35px;
+  border: 0px;
+  padding-left: 20px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+.search button{
+  /*height:35px;*/
+  border:0px;
+
+}
+.search button img{
+  width:20px;
+  height: auto;
+  vertical-align: middle;
+}
+.content{
+  width: 1000px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px 150px 150px ;
+  grid-template-rows: 150px 150px 150px ;
+  grid-gap: 10px;
+}
+.item img{
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+}
+.item1 img{
+  width: 310px;
+}
+.item2{
+  grid-column-start: 3;
+  grid-column-end: span 2;
+}
+.item2 img{
+  width: 310px;
+}
+.item1, .item2 {
+  position: relative;
+}
+h2{
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  font-weight: bold;
+  color: white;
+}
+.h12{
+  width: 80%;
+  height: 70px;
+  margin: 0 auto;
+  color: brown;
+  background-color: khaki;
+  text-align: center;
+  margin: 0px auto;
+  font-size: 20px;
+  padding: w0px 15px 16px 15px 16px;
+  font-weight: bold;
+  border-radius: 20px;
+}

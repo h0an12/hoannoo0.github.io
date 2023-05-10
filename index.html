@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa Hàng Siêu Sủng Thú</title>
+    <link rel="stylesheet" href="lap2.css">
+
+</head>
+<body>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuyết rơi</title>
+    <style>
+        .tuyet{
+            position: absolute;left: 0px;top: 0px;
+        }
+        .tuyetroi{padding-left:15px;
+            font-size:18px;
+            line-height:24px;
+            position:fixed;
+            color:#ebebeb;
+            user-select:none;
+            z-index:1000;
+            -moz-user-select:none;
+            -ms-user-select:none;
+            -khtml-user-select:none;
+            -webkit-user-select:none;
+            -webkit-touch-callout:none;}
+            body{background-color: darkslategray;}
+            .tuyetroi:hover{cursor:default;}
+    </style>
+</head>
+<body>
+   
+   
+        <div class="tuyet">
+
+            <p class="tuyetroi">✺ ❄ ❀</p>
+            
+                    </div>
+<script> 
+
+var requestAnimationFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;var transforms=["transform","msTransform","webkitTransform","mozTransform","oTransform"];var transformProperty=getSupportedPropertyName(transforms);var snowflakes=[];var browserWidth;var browserHeight;var numberOfSnowflakes=50;var resetPosition=false;function setup(){window.addEventListener("DOMContentLoaded",generateSnowflakes,false);window.addEventListener("resize",setResetFlag,false)}setup();function getSupportedPropertyName(b){for(var a=0;a<b.length;a++){if(typeof document.body.style[b[a]]!="undefined"){return b[a]}}return null}function Snowflake(b,a,d,e,c)
+{this.element=b;this.radius=a;this.speed=d;this.xPos=e;this.yPos=c;this.counter=0;this.sign=Math.random()<0.5?1:-1;
+this.element.style.opacity=0.5+Math.random();this.element.style.fontSize=4+Math.random()*30+"px"}Snowflake.prototype.update=function(){this.counter+=this.speed/5000;this.xPos+=this.sign*this.speed*Math.cos(this.counter)/40;this.yPos+=Math.sin(this.counter)/40+this.speed/30;setTranslate3DTransform(this.element,Math.round(this.xPos),Math.round(this.yPos));if(this.yPos>browserHeight){this.yPos=-50}};function setTranslate3DTransform(a,c,b){var d="translate3d("+c+"px, "+b+"px, 0)";a.style[transformProperty]=d}function generateSnowflakes(){var b=document.querySelector(".tuyetroi");var h=b.parentNode;browserWidth=document.documentElement.clientWidth;browserHeight=document.documentElement.clientHeight;for(var d=0;d<numberOfSnowflakes;d++){var j=b.cloneNode(true);h.appendChild(j);var e=getPosition(50,browserWidth);var a=getPosition(50,browserHeight);var c=5+Math.random()*40;var g=4+Math.random()*10;var f=new Snowflake(j,g,c,e,a);snowflakes.push(f)}h.removeChild(b);moveSnowflakes()}function moveSnowflakes(){for(var b=0;b<snowflakes.length;b++){var a=snowflakes[b];a.update()}if(resetPosition){browserWidth=document.documentElement.clientWidth;browserHeight=document.documentElement.clientHeight;for(var b=0;b<snowflakes.length;b++){var a=snowflakes[b];a.xPos=getPosition(50,browserWidth);a.yPos=getPosition(50,browserHeight)}resetPosition=false}requestAnimationFrame(moveSnowflakes)}function getPosition(b,a){return Math.round(-1*b+Math.random()*(a+2*b))}function setResetFlag(a){resetPosition=true};
+</script>
+    <div class="toan">
+        <div class="menu">
+            <div class="up">
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="img\Bản sao của logo.PNG">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="m/m.html">
+                            <img src="img/icon1.PNG">
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li>
+                       <a href="m/m.html" > 
+                            <img src="img/icon2.PNG">
+                        Tôi bán  
+                        </a>                  
+                     </li>
+                     <li>
+                        <a href="m/m.html" >
+                             <img src="img/icon3.PNG">
+                         Chat 
+                         </a>                  
+                      </li>
+                      <li>
+                        <a href="m/m.html" > <img src="img/icon4.PNG">
+                         Thông báo 
+                         </a>                  
+                      </li>
+                      <li>
+                        <a href="https://kokopet.vn/?gclid=EAIaIQobChMIyJXgv5jq_gIVmcZMAh3aEgbrEAAYASAAEgJR2PD_BwE" > <img src="img/icon5.PNG">
+                         Thức ăn cho thú cưng  
+                         </a>                  
+                      </li>
+                </ul>
+            </div>
+            <div class="down">
+                <div class="search">
+                    <input type="" name="" placeholder="Tim Kiếm Trên Chợ wed">
+                    <button>
+                        <img src="img/search.png">
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+        <marquee behavior="scroll" scrollamount="3" direction="left" width="100%">
+            <div style="color:#f00005;white-space:nowrap;font-size: 20px;">꧁•⊹٭V٭⊹•꧂ Bạn Đang Đến Với Cửa Hàng Siêu Sủng Thú  ꧁•⊹٭V٭⊹•꧂</div>
+            </marquee>
+        <div class="content">
+            <div class="item  item1">
+                <img src="img/animal1.jpg">
+                <h2>Cậu vàng (500k) </h2>
+            </div>
+            <div class="item item2">
+                <img src="img/animal2.jpg">
+                <h2>thú cưng (300K)</h2>
+            </div>
+            <div class="item item3">
+                <img src="img/animal3.jpg">
+            </div>
+            <div class="item item3">
+                <img src="img/animal5.jpg">
+            </div>
+            <div class="item item3">
+                <img src="img/animal6.PNG">
+            </div>
+            <div class="item">
+                <img src="img/animal1.jpg">
+            </div>
+            <div class="item">
+                <img src="img/animal2.jpg">
+            </div>
+            <div class="item">
+                <img src="img/animal3.jpg">
+            </div>
+            <div class="item">
+                <img src="img/animal5.jpg">
+            </div>
+            <div class="item">
+                <img src="img/animal6.PNG">
+            </div>
+            <div class="item">
+                <img src="img/animal5.jpg">
+            </div>
+            <div class="item">
+                <img src="img/animal1.jpg">
+            </div>
+            <div class="item">
+                <img src="img/animal2.jpg">
+            </div>
+            <div class="item">
+                <img src="img/animal3.jpg">
+            </div>
+            <div class="item">
+                <img src="img/animal5.jpg">
+            </div>
+            <div class="item">
+                <img src="img/animal6.PNG">
+            </div>
+            <div class="item">
+                <img src="img/images.jpg">
+            </div>
+            <div class="item">
+                <img src="img/images (3).jpg">
+            </div>
+            <div class="item">
+                <img src="img/images (3).jpg">
+            </div>
+            <div class="item">
+                <img src="img/images (1).jpg">
+            </div>
+            <div class="item">
+                <img src="img/images (3).jpg">
+            </div>
+            <div class="item">
+                <img src="img/images (1).jpg">
+            </div>
+        </div>
+
+    </div>
+    <div align="center">
+        <address class="h12">CỬA HÀNG SIÊU SỦNG THÚ <br>- Người đại diện: LÊ BÁ HOAN - Chịu;trách;nhiệm;nội;dung:lÊ BÁ HOAN<a target="_blank" href="https://www.facebook.com/leth.vang.92" rel="noreferrer"></a><br>Địa chỉ: Nhà số 2 , ngõ 04 , đường 01 :Thôn Đại Long ; xã Hoằng Thanh ; Email:lebahoan1812@gmail.com(1.000đ/phút)</address>
+        </div>
+</body>
+</html>
